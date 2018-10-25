@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); 
+@import url('https://fonts.googleapis.com/css?family=Nunito:700');
+
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 60%
+}
+
+body{
+	width: 100%;
+	background-color: #2e2c2c;
+}
+
+.border{
+  outline: .5px solid #333333;
+  outline-offset: -1px;
+}
+
+/* START CLOCK */
+#dospuntos{
+	/* box-shadow: 0 2px 2px #444; */
+	width: 1%;
+	margin: 0px 0px 0px 10px;
+	color: rgb(147, 216, 199);
+	font-family: "Open Sans", sans-serif;
+	font-size: 2em;
+	height: 50%;
+	line-height: 130px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#date{
+	width: 25%;
+	height: 100%;
+
+	color: rgb(147, 216, 199);
+	font-family: "Open Sans", sans-serif;
+	font-size: 2em;
+	margin: 0px 0px 0px 10px;
+	
+	display: flex;
+	-webkit-display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: -webkit-row;
+
+	align-items: center;
+	-webkit-align-items: -webkit-center;
+	
+	justify-content: center;
+	-webkit-justify-content: -webkit-center;
+}
+
+nav{
+	background: #e0de3d;
+	width: 100%;
+	height: 50px;
+}
+
+#clock{
+	background: #9999ff;
+
+	width: 100%;
+	height: 50px;
+
+	display: flex;
+	-webkit-display: -webkit-flex;
+
+	flex-direction: row;
+	-webkit-flex-direction: -webkit-row;
+	
+	align-items: center;
+	-webkit-align-items: -webkit-center;
+	
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	
+	/* left: calc(50% - 300px); */
+	/* position: absolute; */
+	/* top: calc(50% - 65px); */
+	
+}
+
+.unit{
+  /* box-shadow: 0 2px 2px #444; */
+  width: 2%; 
+  height: 100%;
+
+  color: rgb(147, 216, 199);
+  
+  margin: 0px 0px 0px 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* END CLOCK */
+
+
+/*S Grid */
+
+	.cuadricula {
+		width: 100%;
+		height: 100%;
+		margin:0%;
+		padding:1%;
+		background: #666666;
+		display: grid;
+		grid-template-columns: repeat( auto-fit, minmax( 200px, 1fr ) );
+		grid-gap: 10px;
+	}
+
+  .elemento{
+		width:100%;
+		height:100%;
+    background: #666666;
+    list-style-type: none; 
+  }
+
+	.elemento-grid {
+		display: grid;
+    width:inherit;
+		height: inherit;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 20% 20% 20% 40%;
+	}
+
+	.Codigo-Excepcion { 
+		grid-area: 1 / 1 / 2 / 2; 
+		font-size: 40em;
+		background-color: #ff4d4d;
+		
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	.vticker{
+			/* border: 1px solid red; */
+			width: 100%;
+			height: 100%;
+	}
+	.vticker ul, .lista ul{
+			padding: 0px;
+	}
+	.vticker li, .lista li{
+			list-style: none;
+			padding: 10px;
+	}
+
+	.Numero-de-Grupo { 
+		grid-area: 1 / 2 / 2 / 3; 
+		font-size: 1.5em;
+    background-color: #80ff80;
+	}
+
+	.Nombre-de-Granja { 
+		grid-area: 2 / 1 / 3 / 3; 
+		font-size: .2em;
+    background-color: #9999ff
+	}
+
+	.Numero-de-Grupo { 
+		grid-area: 1 / 2 / 2 / 3; 
+		font-size: 1.5em;
+    background-color: #80ff80;
+	}
+
+  .Latitud{
+    font-size: 1.5em;
+    background-color: #F5A9F2;
+  }
+
+  .Longitud{
+    font-size: 1.5em;
+    background-color: #F5A9F2;
+  }
+
+	.Descripcion { 
+		grid-area: 4 / 1 / 4 / 3; 
+		font-size: 4em;
+    background-color: #e0de3d;
+	}
+
+	.campos{
+    width:100%;
+    height:100%;
+    color:#fff;
+    
+    font-size:1.5em;
+		display: flex;
+		flex-direction: row;
+		flex-flow: wrap;
+		justify-content: center;
+		align-items: center;
+		
+	}
+
+/*F Grid */
